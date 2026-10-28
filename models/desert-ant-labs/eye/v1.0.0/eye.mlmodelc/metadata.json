@@ -1,0 +1,1223 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float16, Int8, Palettized (11 bits), Palettized (13 bits), Palettized (14 bits), UInt6, UInt8)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 512)",
+        "shortDescription" : "",
+        "shape" : "[1, 512]",
+        "name" : "embedding",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 16)",
+        "shortDescription" : "",
+        "shape" : "[1, 16]",
+        "name" : "type",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 10)",
+        "shortDescription" : "",
+        "shape" : "[1, 10]",
+        "name" : "reject",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 8)",
+        "shortDescription" : "",
+        "shape" : "[1, 8]",
+        "name" : "sensitive",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 565)",
+        "shortDescription" : "",
+        "shape" : "[1, 565]",
+        "name" : "scenes",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 4)",
+        "shortDescription" : "",
+        "shape" : "[1, 4]",
+        "name" : "rotation",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 11)",
+        "shortDescription" : "",
+        "shape" : "[1, 11]",
+        "name" : "aesthetic",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 1)",
+        "shortDescription" : "",
+        "shape" : "[1, 1]",
+        "name" : "keeper",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 1)",
+        "shortDescription" : "",
+        "shape" : "[1, 1]",
+        "name" : "cover",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 4)",
+        "shortDescription" : "",
+        "shape" : "[1, 4]",
+        "name" : "focus",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 7)",
+        "shortDescription" : "",
+        "shape" : "[1, 7]",
+        "name" : "pet_attrs",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 9,
+    "functions" : [
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 3 × 128 × 128)",
+            "shortDescription" : "",
+            "shape" : "[1, 3, 128, 128]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "is_face",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "is_real",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "eyes_open",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2)",
+            "shortDescription" : "",
+            "shape" : "[1, 2]",
+            "name" : "blink",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "smile",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "mp_smile",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "mouth",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 5)",
+            "shortDescription" : "",
+            "shape" : "[1, 5]",
+            "name" : "expression",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "looking",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "occlusion",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "sharp",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "lighting",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "keepsake",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 3)",
+            "shortDescription" : "",
+            "shape" : "[1, 3]",
+            "name" : "pose",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "quality",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "faces_analyze",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.batchNorm" : 1,
+          "Ios18.linear" : 15,
+          "Ios18.constexprBlockwiseShiftScale" : 132,
+          "Ios18.clip" : 105,
+          "Ios16.reduceMean" : 3,
+          "Ios18.conv" : 156,
+          "Ios18.add" : 30,
+          "Ios18.reshape" : 3
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 3 × 768 × 768)",
+            "shortDescription" : "",
+            "shape" : "[1, 3, 768, 768]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Float32, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1 × 192 × 192)",
+            "shortDescription" : "",
+            "shape" : "[1, 1, 192, 192]",
+            "name" : "heatmap",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2 × 192 × 192)",
+            "shortDescription" : "",
+            "shape" : "[1, 2, 192, 192]",
+            "name" : "size",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2 × 192 × 192)",
+            "shortDescription" : "",
+            "shape" : "[1, 2, 192, 192]",
+            "name" : "offset",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 10 × 192 × 192)",
+            "shortDescription" : "",
+            "shape" : "[1, 10, 192, 192]",
+            "name" : "landmarks",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "faces_detect",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.batchNorm" : 1,
+          "Ios18.relu" : 7,
+          "Ios18.constexprBlockwiseShiftScale" : 50,
+          "Ios18.clip" : 34,
+          "Ios18.conv" : 66,
+          "UpsampleNearestNeighbor" : 3,
+          "Ios18.add" : 13
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 3 × 384 × 384)",
+            "shortDescription" : "",
+            "shape" : "[1, 3, 384, 384]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8, Palettized (11 bits), Palettized (13 bits), Palettized (14 bits), UInt6, UInt8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 512)",
+            "shortDescription" : "",
+            "shape" : "[1, 512]",
+            "name" : "embedding",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 16)",
+            "shortDescription" : "",
+            "shape" : "[1, 16]",
+            "name" : "type",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 10)",
+            "shortDescription" : "",
+            "shape" : "[1, 10]",
+            "name" : "reject",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 8)",
+            "shortDescription" : "",
+            "shape" : "[1, 8]",
+            "name" : "sensitive",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 565)",
+            "shortDescription" : "",
+            "shape" : "[1, 565]",
+            "name" : "scenes",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "rotation",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 11)",
+            "shortDescription" : "",
+            "shape" : "[1, 11]",
+            "name" : "aesthetic",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "keeper",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "cover",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "focus",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 7)",
+            "shortDescription" : "",
+            "shape" : "[1, 7]",
+            "name" : "pet_attrs",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "photo",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.expandDims" : 1,
+          "Ios18.softmax" : 74,
+          "Ios18.mul" : 217,
+          "Ios18.constexprBlockwiseShiftScale" : 15,
+          "Ios18.batchNorm" : 1,
+          "Ios18.realDiv" : 1,
+          "Ios18.avgPool" : 1,
+          "Ios18.sigmoid" : 6,
+          "Ios18.scaledDotProductAttention" : 1,
+          "Split" : 49,
+          "Ios16.reduceMax" : 72,
+          "Tile" : 1,
+          "Ios18.add" : 50,
+          "Ios18.layerNorm" : 28,
+          "Ios18.reshape" : 54,
+          "Ios18.constexprLutToDense" : 53,
+          "Ios18.maximum" : 1,
+          "Ios18.conv" : 49,
+          "Ios18.linear" : 24,
+          "Ios18.gelu" : 22,
+          "Ios18.sub" : 72,
+          "Ios18.concat" : 14,
+          "Stack" : 24,
+          "Ios16.einsum" : 144,
+          "Ios18.transpose" : 67,
+          "Ios18.sliceByIndex" : 53,
+          "Ios18.squeeze" : 2,
+          "Ios16.reduceL2Norm" : 1
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 3 × 384 × 384)",
+            "shortDescription" : "",
+            "shape" : "[1, 3, 384, 384]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8, Palettized (11 bits), Palettized (13 bits), Palettized (14 bits), UInt6, UInt8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 512)",
+            "shortDescription" : "",
+            "shape" : "[1, 512]",
+            "name" : "embedding",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 16)",
+            "shortDescription" : "",
+            "shape" : "[1, 16]",
+            "name" : "type",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 10)",
+            "shortDescription" : "",
+            "shape" : "[1, 10]",
+            "name" : "reject",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 8)",
+            "shortDescription" : "",
+            "shape" : "[1, 8]",
+            "name" : "sensitive",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 565)",
+            "shortDescription" : "",
+            "shape" : "[1, 565]",
+            "name" : "scenes",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "rotation",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 11)",
+            "shortDescription" : "",
+            "shape" : "[1, 11]",
+            "name" : "aesthetic",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "keeper",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1)",
+            "shortDescription" : "",
+            "shape" : "[1, 1]",
+            "name" : "cover",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "focus",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 7)",
+            "shortDescription" : "",
+            "shape" : "[1, 7]",
+            "name" : "pet_attrs",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "peak_logits",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "photo_peak",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.expandDims" : 1,
+          "Ios18.softmax" : 110,
+          "Ios18.mul" : 325,
+          "Ios18.constexprBlockwiseShiftScale" : 16,
+          "Ios18.batchNorm" : 1,
+          "Ios16.reduceMean" : 1,
+          "Ios18.realDiv" : 1,
+          "Ios18.avgPool" : 1,
+          "Ios18.sigmoid" : 6,
+          "Ios18.scaledDotProductAttention" : 1,
+          "Split" : 73,
+          "Ios16.reduceMax" : 108,
+          "Tile" : 1,
+          "Ios18.add" : 74,
+          "Ios18.layerNorm" : 42,
+          "Ios18.reshape" : 78,
+          "Ios18.constexprLutToDense" : 77,
+          "Ios18.maximum" : 1,
+          "Ios18.conv" : 73,
+          "Ios18.linear" : 26,
+          "Ios18.gelu" : 29,
+          "Ios18.sub" : 108,
+          "Ios18.concat" : 20,
+          "Stack" : 36,
+          "Ios16.einsum" : 216,
+          "Ios18.transpose" : 98,
+          "Ios18.sliceByIndex" : 79,
+          "Ios18.squeeze" : 2,
+          "Ios16.reduceL2Norm" : 1
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1 × 432 × 768)",
+            "shortDescription" : "",
+            "shape" : "[1, 1, 432, 768]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Float32, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness_logit",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 54 × 96)",
+            "shortDescription" : "",
+            "shape" : "[1, 54, 96]",
+            "name" : "blur_map",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 54 × 96)",
+            "shortDescription" : "",
+            "shape" : "[1, 54, 96]",
+            "name" : "texture",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "sharp_16x9",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.conv" : 27,
+          "Ios18.sub" : 1,
+          "Ios18.relu" : 22,
+          "Ios18.sigmoid" : 1,
+          "Ios18.add" : 1,
+          "UpsampleNearestNeighbor" : 1,
+          "Ios18.softmax" : 1,
+          "Ios18.sliceByIndex" : 2,
+          "Ios16.reduceSum" : 1,
+          "Ios18.reshape" : 2,
+          "Ios18.constexprBlockwiseShiftScale" : 9,
+          "Ios18.softplus" : 1,
+          "Ios18.mul" : 2
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1 × 768 × 576)",
+            "shortDescription" : "",
+            "shape" : "[1, 1, 768, 576]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Float32, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness_logit",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 96 × 72)",
+            "shortDescription" : "",
+            "shape" : "[1, 96, 72]",
+            "name" : "blur_map",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 96 × 72)",
+            "shortDescription" : "",
+            "shape" : "[1, 96, 72]",
+            "name" : "texture",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "sharp_3x4",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.conv" : 27,
+          "Ios18.sub" : 1,
+          "Ios18.relu" : 22,
+          "Ios18.sigmoid" : 1,
+          "Ios18.add" : 1,
+          "UpsampleNearestNeighbor" : 1,
+          "Ios18.softmax" : 1,
+          "Ios18.sliceByIndex" : 2,
+          "Ios16.reduceSum" : 1,
+          "Ios18.reshape" : 2,
+          "Ios18.constexprBlockwiseShiftScale" : 9,
+          "Ios18.softplus" : 1,
+          "Ios18.mul" : 2
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1 × 576 × 768)",
+            "shortDescription" : "",
+            "shape" : "[1, 1, 576, 768]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Float32, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness_logit",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 72 × 96)",
+            "shortDescription" : "",
+            "shape" : "[1, 72, 96]",
+            "name" : "blur_map",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 72 × 96)",
+            "shortDescription" : "",
+            "shape" : "[1, 72, 96]",
+            "name" : "texture",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "sharp_4x3",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.conv" : 27,
+          "Ios18.sub" : 1,
+          "Ios18.relu" : 22,
+          "Ios18.sigmoid" : 1,
+          "Ios18.add" : 1,
+          "UpsampleNearestNeighbor" : 1,
+          "Ios18.softmax" : 1,
+          "Ios18.sliceByIndex" : 2,
+          "Ios16.reduceSum" : 1,
+          "Ios18.reshape" : 2,
+          "Ios18.constexprBlockwiseShiftScale" : 9,
+          "Ios18.softplus" : 1,
+          "Ios18.mul" : 2
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1 × 768 × 432)",
+            "shortDescription" : "",
+            "shape" : "[1, 1, 768, 432]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Float32, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1)",
+            "shortDescription" : "",
+            "shape" : "[1]",
+            "name" : "sharpness_logit",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 96 × 54)",
+            "shortDescription" : "",
+            "shape" : "[1, 96, 54]",
+            "name" : "blur_map",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 96 × 54)",
+            "shortDescription" : "",
+            "shape" : "[1, 96, 54]",
+            "name" : "texture",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "sharp_9x16",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.conv" : 27,
+          "Ios18.sub" : 1,
+          "Ios18.relu" : 22,
+          "Ios18.sigmoid" : 1,
+          "Ios18.add" : 1,
+          "UpsampleNearestNeighbor" : 1,
+          "Ios18.softmax" : 1,
+          "Ios18.sliceByIndex" : 2,
+          "Ios16.reduceSum" : 1,
+          "Ios18.reshape" : 2,
+          "Ios18.constexprBlockwiseShiftScale" : 9,
+          "Ios18.softplus" : 1,
+          "Ios18.mul" : 2
+        }
+      },
+      {
+        "inputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 3 × 384 × 384)",
+            "shortDescription" : "",
+            "shape" : "[1, 3, 384, 384]",
+            "name" : "image",
+            "type" : "MultiArray"
+          }
+        ],
+        "computePrecision" : "Mixed (Float16, Float32, Int32)",
+        "storagePrecision" : "Mixed (Float16, Int8, Palettized (1 bits), Palettized (11 bits), Palettized (13 bits), UInt1, UInt6, UInt8)",
+        "stateSchema" : [
+
+        ],
+        "outputSchema" : [
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 64 × 64)",
+            "shortDescription" : "",
+            "shape" : "[1, 64, 64]",
+            "name" : "subject",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2 × 48 × 48)",
+            "shortDescription" : "",
+            "shape" : "[1, 2, 48, 48]",
+            "name" : "pet_heatmap",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2 × 48 × 48)",
+            "shortDescription" : "",
+            "shape" : "[1, 2, 48, 48]",
+            "name" : "pet_size",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2 × 48 × 48)",
+            "shortDescription" : "",
+            "shape" : "[1, 2, 48, 48]",
+            "name" : "pet_offset",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1 × 48 × 48)",
+            "shortDescription" : "",
+            "shape" : "[1, 1, 48, 48]",
+            "name" : "person_heatmap",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2 × 48 × 48)",
+            "shortDescription" : "",
+            "shape" : "[1, 2, 48, 48]",
+            "name" : "person_size",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 2 × 48 × 48)",
+            "shortDescription" : "",
+            "shape" : "[1, 2, 48, 48]",
+            "name" : "person_offset",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 4)",
+            "shortDescription" : "",
+            "shape" : "[1, 4]",
+            "name" : "shot_logits",
+            "type" : "MultiArray"
+          },
+          {
+            "hasShapeFlexibility" : "0",
+            "isOptional" : "0",
+            "dataType" : "Float16",
+            "formattedType" : "MultiArray (Float16 1 × 1296)",
+            "shortDescription" : "",
+            "shape" : "[1, 1296]",
+            "name" : "crop_scores",
+            "type" : "MultiArray"
+          }
+        ],
+        "name" : "spatial",
+        "mlProgramOperationTypeHistogram" : {
+          "Ios18.expandDims" : 3,
+          "Ios18.softmax" : 97,
+          "Ios18.mul" : 291,
+          "Ios18.matmul" : 2,
+          "Ios18.batchNorm" : 1,
+          "Ios16.reduceMean" : 1,
+          "Split" : 64,
+          "Ios16.reduceMax" : 96,
+          "Ios18.add" : 69,
+          "Ios16.reduceSum" : 2,
+          "Ios18.layerNorm" : 35,
+          "Ios18.reshape" : 69,
+          "Ios18.constexprLutToDense" : 66,
+          "Ios16.upsampleBilinear" : 1,
+          "Ios18.conv" : 95,
+          "Ios18.gelu" : 38,
+          "Ios18.concat" : 18,
+          "Ios18.sub" : 96,
+          "Ios16.einsum" : 192,
+          "Stack" : 32,
+          "Ios18.transpose" : 84,
+          "Ios18.linear" : 2,
+          "Ios18.convTranspose" : 2,
+          "Ios18.sliceByIndex" : 71,
+          "Ios18.constexprBlockwiseShiftScale" : 25
+        }
+      }
+    ],
+    "mlProgramOperationTypeHistogram" : {
+      "Ios18.expandDims" : 1,
+      "Ios18.softmax" : 74,
+      "Ios18.mul" : 217,
+      "Ios18.constexprBlockwiseShiftScale" : 15,
+      "Ios18.batchNorm" : 1,
+      "Ios18.realDiv" : 1,
+      "Ios18.avgPool" : 1,
+      "Ios18.sigmoid" : 6,
+      "Ios18.scaledDotProductAttention" : 1,
+      "Split" : 49,
+      "Ios16.reduceMax" : 72,
+      "Tile" : 1,
+      "Ios18.add" : 50,
+      "Ios18.layerNorm" : 28,
+      "Ios18.reshape" : 54,
+      "Ios18.constexprLutToDense" : 53,
+      "Ios18.maximum" : 1,
+      "Ios18.conv" : 49,
+      "Ios18.linear" : 24,
+      "Ios18.gelu" : 22,
+      "Ios18.sub" : 72,
+      "Ios18.concat" : 14,
+      "Stack" : 24,
+      "Ios16.einsum" : 144,
+      "Ios18.transpose" : 67,
+      "Ios18.sliceByIndex" : 53,
+      "Ios18.squeeze" : 2,
+      "Ios16.reduceL2Norm" : 1
+    },
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "15.0",
+      "tvOS" : "18.0",
+      "visionOS" : "2.0",
+      "watchOS" : "11.0",
+      "iOS" : "18.0",
+      "macCatalyst" : "18.0"
+    },
+    "computePrecision" : "Mixed (Float16, Int32)",
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 3 × 384 × 384)",
+        "shortDescription" : "",
+        "shape" : "[1, 3, 384, 384]",
+        "name" : "image",
+        "type" : "MultiArray"
+      }
+    ],
+    "defaultFunctionName" : "photo",
+    "generatedClassName" : "eye",
+    "userDefinedMetadata" : {
+
+    },
+    "method" : "predict"
+  }
+]

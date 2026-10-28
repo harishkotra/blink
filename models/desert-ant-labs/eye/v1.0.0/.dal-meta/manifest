@@ -1,0 +1,9 @@
+DAL1
+R	eye.mlmodelc/
+R	eye_meta.json
+F	eye.mlmodelc/analytics/coremldata.bin	243	4ef5e527640fa952e7c270340e94a527164afd8bfa4f059ba85ce0ac2dd4f195
+F	eye.mlmodelc/coremldata.bin	2253	fddb59812707c8ec9bdb00c7bd2e997a843f96c157aef90c878b72ea7a1cbbdf
+F	eye.mlmodelc/metadata.json	38936	d05312a5baad691cca940061dc87b3e1daa4a237ce673e69efc11691e5902981
+F	eye.mlmodelc/model.mil	2147432	d40364bfc087282d5e94ce327fd03b7626ff0a5599671afcd77043704a894944
+F	eye.mlmodelc/weights/weight.bin	48128448	c2bd42f626bc09366a48759d0ee394421029755ead19fc33b687502e0e672635
+F	eye_meta.json	280890	3678669c840378bca191250597e3a77e5b478e12d3e70c48f827b860551f791c
